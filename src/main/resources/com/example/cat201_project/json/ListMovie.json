@@ -1,0 +1,14 @@
+{
+  "listMovie":
+          [
+            {
+              "movieID" : "0",
+              "movieName" : "Avatar",
+              "movieDescription" : "A boy raised by boars, who wears a boar's head, boards the Infinity Train on a new mission with the Flame Pillar along with another boy who reveals his true power when he sleeps. Their mission is to defeat a demon who has been tormenting people and killing the demon slayers who oppose it.",
+              "movieCast" : "Natsuki Hanae (voice), Akari Kitô (voice), Hiro Shimono(voice)",
+              "movieDirector" : "Haruo Sotozaki",
+              "moviePhoto" : "src/main/resources/com/example/cat201_project/public/Avatar.jpg",
+              "moviePoster" : "src/main/resources/com/example/cat201_project/public/AvatarPoster.jpg"
+            }
+          ]
+}
