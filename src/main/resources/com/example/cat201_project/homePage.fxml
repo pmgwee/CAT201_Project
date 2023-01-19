@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -16,7 +17,7 @@
    <children>
       <ScrollPane prefHeight="717.0" prefWidth="1270.0">
          <content>
-            <AnchorPane prefHeight="1916.0" prefWidth="1259.0">
+            <AnchorPane prefHeight="1916.0" prefWidth="1259.0" styleClass="root" stylesheets="@css/homePage.css">
                <children>
                   <ImageView fitHeight="708.0" fitWidth="1270.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -24,35 +25,41 @@
                      </image>
                   </ImageView>
                   <Button layoutX="881.0" layoutY="553.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="291.0" styleClass="homeButton" stylesheets="@css/homePage.css" text="Book Now" />
-                  <Button layoutX="881.0" layoutY="464.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="290.0" styleClass="homeButton" stylesheets="@css/homePage.css" text="Movie Info" />
+                  <Button layoutX="881.0" layoutY="464.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="290.0" styleClass="homeButton" stylesheets="@css/homePage.css" text="Movie Info" textFill="#f8c33a">
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font></Button>
                   <ButtonBar layoutX="6.0" layoutY="950.0" prefHeight="386.0" prefWidth="1242.0">
                     <buttons>
-                        <Button mnemonicParsing="false" prefHeight="438.0" prefWidth="704.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="461.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="477.0" text="Button" />
-                      <Button mnemonicParsing="false" prefHeight="483.0" text="Button" />
-                      <Button mnemonicParsing="false" prefHeight="496.0" prefWidth="319.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="438.0" prefWidth="704.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="461.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="477.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                      <Button mnemonicParsing="false" prefHeight="483.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                      <Button mnemonicParsing="false" prefHeight="496.0" prefWidth="319.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
                     </buttons>
                   </ButtonBar>
                   <ButtonBar layoutX="13.0" layoutY="1350.0" prefHeight="381.0" prefWidth="1242.0">
                     <buttons>
-                        <Button mnemonicParsing="false" prefHeight="448.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="382.0" prefWidth="522.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="445.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="477.0" text="Button" />
-                        <Button mnemonicParsing="false" prefHeight="461.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="448.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="382.0" prefWidth="522.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="445.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="477.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="461.0" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button" />
                     </buttons>
                   </ButtonBar>
                   <Pane layoutY="719.0" prefHeight="231.0" prefWidth="1259.0">
                      <children>
-                        <Text layoutX="20.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening This Week" wrappingWidth="524.53662109375">
+                        <Text fill="WHITE" layoutX="20.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening This Week" wrappingWidth="524.53662109375">
                            <font>
                               <Font name="SansSerif Regular" size="56.0" />
                            </font>
                         </Text>
                      </children>
                   </Pane>
-                  <Text layoutX="227.0" layoutY="1850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Copyright 2022 HeongMadihubci" textAlignment="CENTER" wrappingWidth="866.936767578125" />
+                  <Text fill="WHITE" layoutX="227.0" layoutY="1850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Copyright 2022 HeongMadihubci" textAlignment="CENTER" wrappingWidth="866.936767578125">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
          </content></ScrollPane>
@@ -60,11 +67,12 @@
          <children>
             <Pane prefHeight="166.0" prefWidth="194.0">
                <children>
-                  <ImageView fitHeight="146.0" fitWidth="146.0" layoutX="28.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="176.0" fitWidth="177.0" layoutX="-2.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@public/HeongMadihubci-logos_transparent.png" />
                      </image>
                   </ImageView>
+                  <Line endX="1130.39990234375" endY="-1.52587890625E-5" layoutX="100.0" layoutY="170.0" opacity="0.79" startX="94.39999389648438" startY="-1.52587890625E-5" stroke="#f8c33a" strokeType="OUTSIDE" strokeWidth="2.0" />
                </children>
             </Pane>
             <Pane prefHeight="198.0" prefWidth="443.0" stylesheets="@css/homePage.css">
@@ -98,7 +106,7 @@
             </Pane>
             <Pane prefHeight="198.0" prefWidth="613.0">
                <children>
-                  <TextField layoutX="76.0" layoutY="79.0" prefHeight="40.0" prefWidth="305.0" styleClass="Search" stylesheets="@css/homePage.css" />
+                  <TextField layoutX="76.0" layoutY="79.0" prefHeight="40.0" prefWidth="305.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
                   <Button layoutX="341.0" layoutY="79.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="47.0" stylesheets="@css/homePage.css">
                      <graphic>
                         <ImageView fitHeight="34.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">

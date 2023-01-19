@@ -1,0 +1,10 @@
+.TicketBar{
+    -fx-background-color: #537C97 ;
+    -fx-background-radius: 15px;
+}
+
+.BackButton{
+    -fx-background-radius: 20px;
+    -fx-background-color: #F8C33A;
+    -fx-text-fill:white;
+}
