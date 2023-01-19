@@ -1,0 +1,30 @@
+
+
+.button{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #FF003C;
+    -fx-text-fill:white;
+}
+
+.homeButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #F8C33A;
+    -fx-text-fill:black;
+}
+
+
+.Search{
+    -fx-font-weight: normal;
+    -fx-font-size: 18 px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #E5E5E5;
+}
+
+.copyright{
+    -fx-font-size: 1.2rem;
+    -fx-text-fill: #E5E5E5;
+}
