@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,63 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.TicketHistory">
-   <ScrollPane prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <content>
-         <AnchorPane prefHeight="722.0" prefWidth="1278.0" styleClass="root" stylesheets="@css/homePage.css">
-            <children>
-               <HBox layoutX="38.0" layoutY="208.0" prefHeight="67.0" prefWidth="1190.0" styleClass="TicketBar" stylesheets="@css/ticketHistory.css">
-                  <children>
-                     <Label alignment="CENTER" prefHeight="74.0" prefWidth="571.0" text="Movie" textFill="WHITE">
-                        <font>
-                           <Font name="SansSerif Regular" size="35.0" />
-                        </font>
-                     </Label>
-                     <Label alignment="CENTER" prefHeight="188.0" prefWidth="194.0" text="Date" textFill="WHITE">
-                        <font>
-                           <Font name="SansSerif Regular" size="35.0" />
-                        </font>
-                     </Label>
-                     <Label alignment="CENTER" prefHeight="99.0" prefWidth="255.0" text="Time" textFill="WHITE">
-                        <font>
-                           <Font name="SansSerif Regular" size="35.0" />
-                        </font>
-                     </Label>
-                     <Label alignment="CENTER" prefHeight="94.0" prefWidth="223.0" text="Seat" textFill="WHITE">
-                        <font>
-                           <Font name="SansSerif Regular" size="36.0" />
-                        </font>
-                     </Label>
-                  </children>
-               </HBox>
-               <Pane layoutX="33.0" layoutY="613.0" prefHeight="92.0" prefWidth="1208.0">
-                  <children>
-                     <HBox layoutX="-2.0" prefHeight="100.0" prefWidth="1212.0">
-                        <children>
-                           <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="62.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css">
-                              <graphic>
-                                 <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
-                                    <font>
-                                       <Font size="26.0" />
-                                    </font>
-                                 </FontAwesomeIconView>
-                              </graphic>
-                           </Button>
-                           <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="185.3367042541504">
-                              <font>
-                                 <Font size="29.0" />
-                              </font>
-                              <HBox.margin>
-                                 <Insets top="5.0" />
-                              </HBox.margin>
-                           </Text>
-                        </children>
-                     </HBox>
-                  </children>
-               </Pane>
-            </children></AnchorPane>
-      </content>
-   </ScrollPane>
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@css/homePage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.UserProfile">
     <HBox prefHeight="194.0" prefWidth="1277.0">
         <children>
             <Pane prefHeight="166.0" prefWidth="194.0">
@@ -120,4 +63,68 @@
             </Pane>
         </children>
     </HBox>
+   <AnchorPane layoutY="188.0" prefHeight="530.0" prefWidth="1278.0">
+      <children>
+         <FontAwesomeIconView fill="#ff003c" glyphName="USER" layoutX="206.0" layoutY="288.0" size="260">
+            <font>
+               <Font size="91.0" />
+            </font>
+         </FontAwesomeIconView>
+         <Text fill="WHITE" layoutX="491.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+            <font>
+               <Font name="SansSerif Regular" size="30.0" />
+            </font>
+         </Text>
+          <Pane layoutX="7.0" layoutY="461.0" prefHeight="92.0" prefWidth="1208.0">
+              <children>
+                  <HBox layoutX="34.0" prefHeight="100.0" prefWidth="1176.0">
+                      <children>
+                          <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="62.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css">
+                              <graphic>
+                                  <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
+                                      <font>
+                                          <Font size="26.0" />
+                                      </font>
+                                  </FontAwesomeIconView>
+                              </graphic>
+                          </Button>
+                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="185.3367042541504">
+                              <font>
+                                  <Font size="29.0" />
+                              </font>
+                              <HBox.margin>
+                                  <Insets top="5.0" />
+                              </HBox.margin>
+                          </Text>
+                      </children>
+                  </HBox>
+              </children>
+          </Pane>
+         <Text fill="WHITE" layoutX="491.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="87.61627197265625">
+            <font>
+               <Font name="SansSerif Regular" size="30.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="537.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="93.80166625976562">
+            <font>
+               <Font name="SansSerif Regular" size="30.0" />
+            </font>
+         </Text>
+         <Label layoutX="597.0" layoutY="83.0" text="Name123" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Label>
+         <Label layoutX="603.0" layoutY="164.0" text="Email123" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Label>
+         <Label layoutX="604.0" layoutY="243.0" text="ID123" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
 </AnchorPane>

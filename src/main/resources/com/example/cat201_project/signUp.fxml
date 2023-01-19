@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.SignUp">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="735.0" fitWidth="972.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@public/LoginBackground.jpg" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="245.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                    <font>
+                        <Font name="SansSerif Regular" size="30.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="241.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                    <font>
+                        <Font name="SansSerif Regular" size="30.0" />
+                    </font>
+                </Text>
+                <TextField layoutX="236.0" layoutY="88.0" prefHeight="45.0" prefWidth="389.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+                <TextField layoutX="237.0" layoutY="200.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+                <Button layoutX="381.0" layoutY="639.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/homePage.css" text="Login">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            <Text fill="WHITE" layoutX="246.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Text>
+            <TextField layoutX="242.0" layoutY="312.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <Text fill="WHITE" layoutX="250.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Text>
+            <TextField layoutX="240.0" layoutY="429.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <Text fill="WHITE" layoutX="252.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password again">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Text>
+            <TextField layoutX="244.0" layoutY="547.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <Label layoutX="262.0" layoutY="137.0" prefHeight="22.0" prefWidth="331.0" text="Existed Email! Please try again" textFill="RED">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="248.0" text="Existed Name! Please try again" textFill="RED">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="365.0" text="Existed ID! Please try again" textFill="RED">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="596.0" text="Unmatched password! Please try again" textFill="RED">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="283.0" layoutY="686.0" prefHeight="26.0" prefWidth="327.0" text="Congrat! Sign up Sucessfully!" textFill="#f8c33a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="63.0" layoutY="58.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css" />
+            <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="82.0" layoutY="97.0" size="40" wrappingWidth="23.723811864852905" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>
