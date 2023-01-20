@@ -7,14 +7,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HomePage extends Application
+public class SignUp extends Application
 {
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(com.example.cat201_project.HomePage.class.getResource("homePage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(com.example.cat201_project.HomePage.class.getResource("signUp.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        scene.getStylesheets().add(getClass().getResource("css/homePage.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("css/signUp.css").toExternalForm());
         stage.setTitle("CINEMA!");
         stage.setScene(scene);
         stage.show();
@@ -27,5 +27,3 @@ public class HomePage extends Application
 
     }
 }
-
-

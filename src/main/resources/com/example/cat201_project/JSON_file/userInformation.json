@@ -1,8 +1,8 @@
-{"userInfo":
+{
+  "userInfo":
   [
     {"password":"user","userName":"user","userID":"user","email":"leeahming199@gmail.com"},
-    {"password":"test","userName":"test","userID":"user2","email":"test@gmail.com"},
-    {"password":"admin","userName":"admin","userID":"admin","email":"admin@gmail.com"},
-    {"password":"kali","userName":12,"userID":1,"email":"12"}
+    {"password":"test","userName":"test","userID":"test","email":"test@gmail.com"},
+    {"password":"admin","userName":"admin","userID":"admin","email":"admin@gmail.com"}
   ]
 }

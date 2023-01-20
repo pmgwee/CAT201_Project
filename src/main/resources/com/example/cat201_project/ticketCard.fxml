@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.TicketHistoryCard">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@css/ticketCard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.TicketHistoryCard">
     <HBox layoutX="39.0" layoutY="175.0" prefHeight="67.0" prefWidth="1190.0" styleClass="TicketList" stylesheets="@css/ticketCard.css">
         <children>
             <Label alignment="CENTER" prefHeight="74.0" prefWidth="571.0" stylesheets="@css/ticketCard.css" text="Movie" textFill="WHITE">

@@ -33,24 +33,24 @@
                   <Font name="Sans Serif Collection" size="30.0" />
                </font>
             </Text>
-            <TextField fx:id="userIDTextField" layoutX="271.0" layoutY="336.0" prefHeight="45.0" prefWidth="389.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-            <TextField fx:id="userPwTextField" layoutX="272.0" layoutY="448.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-            <Button fx:id="signUpBttn" layoutX="402.0" layoutY="582.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/homePage.css" text="Login">
+            <TextField fx:id="userIDTextField" layoutX="271.0" layoutY="336.0" prefHeight="45.0" prefWidth="389.0" styleClass="textField" stylesheets="@css/login.css" />
+            <TextField fx:id="userPwTextField" layoutX="272.0" layoutY="448.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/login.css" />
+            <Button fx:id="signUpBttn" layoutX="402.0" layoutY="557.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/login.css" text="Login">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="419.0" layoutY="630.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
+            <Button layoutX="419.0" layoutY="600.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Label fx:id="emptyTextFieldErrMsg" layoutX="344.0" layoutY="518.0" text="UserID or Password Cannot be Empty" textAlignment="CENTER" textFill="RED">
+            <Label fx:id="emptyTextFieldErrMsg" layoutX="344.0" layoutY="518.0" text="No Blank Information is allowed! Pls Fill in!" textAlignment="CENTER" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Text fx:id="errorInvalidAccMessage" fill="RED" layoutX="365.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Account Information">
+            <Text fx:id="errorInvalidAccMessage" fill="RED" layoutX="365.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Account Information!!">
                <font>
                   <Font size="15.0" />
                </font>

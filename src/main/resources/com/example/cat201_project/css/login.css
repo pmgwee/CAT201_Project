@@ -1,3 +1,12 @@
+.button{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #FF003C;
+    -fx-text-fill:white;
+    -fx-start-margin: 20px;
+}
+
 .forgotPassword{
     -fx-background-color:transparent;
     -fx-border-color:transparent;
@@ -8,4 +17,14 @@
     -fx-background-color:transparent;
     -fx-border-color:transparent;
     -fx-text-fill:#0066CC;
+    -fx-font-size: 15 px;
+}
+
+
+
+.textField{
+    -fx-font-weight: normal;
+    -fx-font-size: 18 px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #E5E5E5;
 }

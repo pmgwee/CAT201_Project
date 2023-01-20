@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.SignUp">
+<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.SignUpController">
     <children>
         <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -29,9 +29,9 @@
                         <Font name="SansSerif Regular" size="30.0" />
                     </font>
                 </Text>
-                <TextField layoutX="236.0" layoutY="88.0" prefHeight="45.0" prefWidth="389.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-                <TextField layoutX="237.0" layoutY="200.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-                <Button layoutX="381.0" layoutY="639.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/homePage.css" text="Login">
+                <TextField fx:id="emailTextField" layoutX="236.0" layoutY="88.0" prefHeight="45.0" prefWidth="389.0" styleClass="textField" stylesheets="@css/signUp.css" />
+                <TextField fx:id="userNameTextField" layoutX="237.0" layoutY="200.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/signUp.css" />
+                <Button fx:id="signUpBttn" layoutX="381.0" layoutY="639.0" mnemonicParsing="false" onAction="#signUp" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/signUp.css" text="Sign Up">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -41,45 +41,45 @@
                   <Font name="SansSerif Regular" size="30.0" />
                </font>
             </Text>
-            <TextField layoutX="242.0" layoutY="312.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <TextField fx:id="userIDTextField" layoutX="242.0" layoutY="312.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/signUp.css" />
             <Text fill="WHITE" layoutX="250.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
                <font>
                   <Font name="SansSerif Regular" size="30.0" />
                </font>
             </Text>
-            <TextField layoutX="240.0" layoutY="429.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <TextField fx:id="pwTextField" layoutX="240.0" layoutY="429.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/signUp.css" />
             <Text fill="WHITE" layoutX="252.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password again">
                <font>
                   <Font name="SansSerif Regular" size="30.0" />
                </font>
             </Text>
-            <TextField layoutX="244.0" layoutY="547.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-            <Label layoutX="262.0" layoutY="137.0" prefHeight="22.0" prefWidth="331.0" text="Existed Email! Please try again" textFill="RED">
+            <TextField fx:id="reEnterPwTextField" layoutX="244.0" layoutY="547.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/signUp.css" />
+            <Label fx:id="emailErrLabel" layoutX="262.0" layoutY="137.0" prefHeight="22.0" prefWidth="331.0" text="Existed Email! Please try again" textFill="RED">
                <font>
                   <Font name="SansSerif Regular" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="257.0" layoutY="248.0" text="Existed Name! Please try again" textFill="RED">
+            <Label fx:id="userNameErrLabel" layoutX="257.0" layoutY="248.0" text="Existed Name! Please try again" textFill="RED">
                <font>
                   <Font name="SansSerif Regular" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="256.0" layoutY="365.0" text="Existed ID! Please try again" textFill="RED">
+            <Label fx:id="userIDErrLabel" layoutX="256.0" layoutY="365.0" text="Existed ID! Please try again" textFill="RED">
                <font>
                   <Font name="SansSerif Regular" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="257.0" layoutY="596.0" text="Unmatched password! Please try again" textFill="RED">
+            <Label fx:id="pwNotSameErrLabel" layoutX="257.0" layoutY="596.0" text="Unmatched password! Please try again" textFill="RED">
                <font>
                   <Font name="SansSerif Regular" size="18.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="283.0" layoutY="686.0" prefHeight="26.0" prefWidth="327.0" text="Congrat! Sign up Sucessfully!" textFill="#f8c33a">
+            <Label fx:id="signUpSuccessMsg" alignment="CENTER" layoutX="283.0" layoutY="686.0" prefHeight="26.0" prefWidth="327.0" text="Congrat! Sign up Sucessfully!" textFill="#f8c33a">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button layoutX="63.0" layoutY="58.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css" />
+            <Button fx:id="returnToLoginBttn" layoutX="63.0" layoutY="58.0" mnemonicParsing="false" onAction="#changeToLoginScene" prefHeight="48.0" prefWidth="56.0" styleClass="BackButton" stylesheets="@css/signUp.css" />
             <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="82.0" layoutY="97.0" size="40" wrappingWidth="23.723811864852905" />
             </children></AnchorPane>
     </children>
