@@ -20,7 +20,7 @@
       <content>
          <AnchorPane prefHeight="722.0" prefWidth="1278.0" styleClass="root" stylesheets="@css/homePage.css">
             <children>
-               <HBox layoutX="38.0" layoutY="208.0" prefHeight="67.0" prefWidth="1190.0" styleClass="TicketBar" stylesheets="@css/ticketHistory.css">
+               <HBox layoutX="37.0" layoutY="292.0" prefHeight="67.0" prefWidth="1190.0" styleClass="TicketBar" stylesheets="@css/ticketHistory.css">
                   <children>
                      <Label alignment="CENTER" prefHeight="74.0" prefWidth="571.0" text="Movie" textFill="WHITE">
                         <font>
@@ -44,31 +44,27 @@
                      </Label>
                   </children>
                </HBox>
-               <Pane layoutX="33.0" layoutY="613.0" prefHeight="92.0" prefWidth="1208.0">
+               <HBox layoutX="40.0" layoutY="212.0" prefHeight="100.0" prefWidth="1223.0">
                   <children>
-                     <HBox layoutX="-2.0" prefHeight="100.0" prefWidth="1212.0">
-                        <children>
-                           <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="62.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css">
-                              <graphic>
-                                 <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
-                                    <font>
-                                       <Font size="26.0" />
-                                    </font>
-                                 </FontAwesomeIconView>
-                              </graphic>
-                           </Button>
-                           <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="185.3367042541504">
+                     <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="62.0" styleClass="BackButton" stylesheets="@css/ticketHistory.css">
+                        <graphic>
+                           <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
                               <font>
-                                 <Font size="29.0" />
+                                 <Font size="26.0" />
                               </font>
-                              <HBox.margin>
-                                 <Insets top="5.0" />
-                              </HBox.margin>
-                           </Text>
-                        </children>
-                     </HBox>
+                           </FontAwesomeIconView>
+                        </graphic>
+                     </Button>
+                     <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="185.3367042541504">
+                        <font>
+                           <Font size="29.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets top="5.0" />
+                        </HBox.margin>
+                     </Text>
                   </children>
-               </Pane>
+               </HBox>
             </children></AnchorPane>
       </content>
    </ScrollPane>

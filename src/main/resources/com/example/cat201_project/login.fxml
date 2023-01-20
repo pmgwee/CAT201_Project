@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.Login">
+<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.LoginController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -22,7 +23,7 @@
                   <Image url="@public/HeongMadihubci-logos_transparent.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="280.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+            <Text fill="WHITE" layoutX="280.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account ID">
                <font>
                   <Font name="SansSerif Regular" size="30.0" />
                </font>
@@ -32,23 +33,28 @@
                   <Font name="Sans Serif Collection" size="30.0" />
                </font>
             </Text>
-            <TextField layoutX="271.0" layoutY="336.0" prefHeight="55.0" prefWidth="389.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-            <TextField layoutX="272.0" layoutY="448.0" prefHeight="55.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
-            <Button layoutX="404.0" layoutY="560.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/homePage.css" text="Login">
+            <TextField fx:id="userIDTextField" layoutX="271.0" layoutY="336.0" prefHeight="45.0" prefWidth="389.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <TextField fx:id="userPwTextField" layoutX="272.0" layoutY="448.0" prefHeight="45.0" prefWidth="391.0" styleClass="searchBar" stylesheets="@css/homePage.css" />
+            <Button fx:id="signUpBttn" layoutX="402.0" layoutY="582.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/homePage.css" text="Login">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="421.0" layoutY="608.0" mnemonicParsing="false" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
+            <Button layoutX="419.0" layoutY="630.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="268.0" layoutY="506.0" mnemonicParsing="false" styleClass="forgotPassword" stylesheets="@css/login.css" text="Forgot Password" textFill="WHITE">
+            <Label fx:id="emptyTextFieldErrMsg" layoutX="344.0" layoutY="518.0" text="UserID or Password Cannot be Empty" textAlignment="CENTER" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font>
-            </Button>
+            </Label>
+            <Text fx:id="errorInvalidAccMessage" fill="RED" layoutX="365.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Account Information">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
          </children></AnchorPane>
    </children>
 </AnchorPane>
