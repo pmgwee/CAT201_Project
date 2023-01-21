@@ -654,7 +654,7 @@ public class PurchaseTicketController {
         }
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Confirm_Ticket.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("checkoutTicket.fxml"));
         Stage stage = (Stage) ConfirmButton.getScene().getWindow();
         stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
         stage.show();

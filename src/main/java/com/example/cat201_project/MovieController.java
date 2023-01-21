@@ -81,15 +81,15 @@ public class MovieController {
         stage.show();
     }
 
-//    public void bookNowButtonclicked(ActionEvent event) throws IOException
-//    {
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("buy-ticket.fxml"));
-//        Stage stage = (Stage) bookNowButton.getScene().getWindow();
-//        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
-//        PurchaseTicketController controller = fxmlLoader.getController();
-//        controller.initialize(movieIndex);
-//        stage.show();
-//    }
+    public void bookNowButtonclicked(ActionEvent event) throws IOException
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("purchaseTicket.fxml"));
+        Stage stage = (Stage) bookNowButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        PurchaseTicketController controller = fxmlLoader.getController();
+        controller.initialize(movieIndex);
+        stage.show();
+    }
 
     public void bookedTicketButtonClicked(ActionEvent event) throws IOException
     {

@@ -59,7 +59,7 @@ public class TicketHistoryController implements Initializable {
         List<TicketHistory> list = new ArrayList<>();
         String movie,QR,time,date,seats;
 
-        JSONObject ticketInfo = JsonClass.getJSONObject("orderData.json");
+        JSONObject ticketInfo = JsonClass.getJSONObject("paymentData.json");
         JSONArray array = (JSONArray) ticketInfo.get("orderInfo");
         JSONArray ticketArray = null;
 
