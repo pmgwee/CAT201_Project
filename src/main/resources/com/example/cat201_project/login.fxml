@@ -35,12 +35,12 @@
             </Text>
             <TextField fx:id="userIDTextField" layoutX="271.0" layoutY="336.0" prefHeight="45.0" prefWidth="389.0" styleClass="textField" stylesheets="@css/login.css" />
             <TextField fx:id="userPwTextField" layoutX="272.0" layoutY="448.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/login.css" />
-            <Button fx:id="signUpBttn" layoutX="402.0" layoutY="557.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/login.css" text="Login">
+            <Button fx:id="loginButton" layoutX="402.0" layoutY="557.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/login.css" text="Login">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="419.0" layoutY="600.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
+            <Button fx:id="signUpBttn" layoutX="419.0" layoutY="600.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
                <font>
                   <Font size="15.0" />
                </font>

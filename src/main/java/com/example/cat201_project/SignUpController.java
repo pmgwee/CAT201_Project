@@ -1,7 +1,11 @@
 package com.example.cat201_project;
 
 import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.PauseTransition;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,9 +20,13 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignUpController implements Initializable{
@@ -151,7 +159,7 @@ public class SignUpController implements Initializable{
     public void changeToLoginScene(ActionEvent e) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
         Stage stage = (Stage) returnToLoginBttn.getScene().getWindow();
-        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.setScene(new Scene(fxmlLoader.load(), 957, 720));
         stage.show();
     }
 

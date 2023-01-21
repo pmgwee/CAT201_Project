@@ -24,6 +24,7 @@ import static com.example.cat201_project.JsonEditor.getJSONObject;
 
 public class LoginController implements Initializable{
 
+    @FXML private Button loginButton;
     @FXML private TextField userIDTextField;
     @FXML private TextField userPwTextField;
 
@@ -59,7 +60,7 @@ public class LoginController implements Initializable{
                 JsonEditor.setUserArrayIndex(i);
                 System.out.println("your index is "+ JsonEditor.getUserArrayIndex());
                 isValidAcc = true;
-                changeToHomeMovieScene();
+                changeToHomePageScene();
             }
         }
 
@@ -90,15 +91,14 @@ public class LoginController implements Initializable{
     }
 
     public void changeToSignUpScene(ActionEvent e) throws IOException {
-
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signUp.fxml"));
         Stage stage = (Stage) signUpBttn.getScene().getWindow();
-        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.setScene(new Scene(fxmlLoader.load(), 957, 720));
         stage.show();
     }
 
 
-    public void changeToHomeMovieScene() throws IOException {
+    public void changeToHomePageScene() throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homePage.fxml"));
         Stage stage = (Stage) signUpBttn.getScene().getWindow();

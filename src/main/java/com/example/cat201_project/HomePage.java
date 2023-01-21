@@ -1,5 +1,4 @@
 package com.example.cat201_project;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,7 +14,7 @@ public class HomePage extends Application
         FXMLLoader fxmlLoader = new FXMLLoader(com.example.cat201_project.HomePage.class.getResource("homePage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         scene.getStylesheets().add(getClass().getResource("css/homePage.css").toExternalForm());
-        stage.setTitle("CINEMA!");
+        stage.setTitle("HeongMadihubci CINEMA!");
         stage.setScene(scene);
         stage.show();
     }
@@ -27,5 +26,3 @@ public class HomePage extends Application
 
     }
 }
-
-
