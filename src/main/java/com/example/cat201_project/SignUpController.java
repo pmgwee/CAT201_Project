@@ -1,11 +1,7 @@
 package com.example.cat201_project;
 
 import javafx.animation.FadeTransition;
-import javafx.animation.KeyFrame;
-import javafx.animation.PauseTransition;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -20,13 +16,9 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignUpController implements Initializable{
@@ -53,9 +45,9 @@ public class SignUpController implements Initializable{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // set not visible to all the error message
         setErrLabelVisibility(false);
-        System.out.println(JsonEditor.getUserArrayIndex());
+        System.out.println(JsonClass.getUserArrayIndex());
         // get all the data from userInformation.json
-        JSONObject userInfo = JsonEditor.getJSONObject("userInformation.json");
+        JSONObject userInfo = JsonClass.getJSONObject("userInformation.json");
         userData = (JSONArray) userInfo.get("userInfo");
     }
 
@@ -74,7 +66,7 @@ public class SignUpController implements Initializable{
             newUserAcc.put("password",userPw);
             newUserAcc.put("email",userEmail);
 
-            JsonEditor.addInfo("userInformation.json",newUserAcc);
+            JsonClass.addInfo("userInformation.json",newUserAcc);
 
             System.out.println("SUCCESSFULLY SIGN UP !!");
             setAllTextFieldEmpty();

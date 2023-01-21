@@ -5,25 +5,25 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@css/ticketCard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.TicketHistoryCard">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@css/ticketCard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.TicketCardController">
     <HBox layoutX="39.0" layoutY="175.0" prefHeight="67.0" prefWidth="1190.0" styleClass="TicketList" stylesheets="@css/ticketCard.css">
         <children>
-            <Label alignment="CENTER" prefHeight="74.0" prefWidth="571.0" stylesheets="@css/ticketCard.css" text="Movie" textFill="WHITE">
+            <Label fx:id="movieName" alignment="CENTER" prefHeight="74.0" prefWidth="571.0" stylesheets="@css/ticketCard.css" text="Movie" textFill="WHITE">
                 <font>
                     <Font name="SansSerif Regular" size="35.0" />
                 </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="188.0" prefWidth="194.0" text="Date" textFill="WHITE">
+            <Label fx:id="date" alignment="CENTER" prefHeight="188.0" prefWidth="194.0" text="Date" textFill="WHITE">
                 <font>
                     <Font name="SansSerif Regular" size="35.0" />
                 </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="99.0" prefWidth="255.0" text="Time" textFill="WHITE">
+            <Label fx:id="time" alignment="CENTER" prefHeight="99.0" prefWidth="255.0" text="Time" textFill="WHITE">
                 <font>
                     <Font name="SansSerif Regular" size="35.0" />
                 </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="94.0" prefWidth="223.0" text="Seat" textFill="WHITE">
+            <Label fx:id="seat" alignment="CENTER" prefHeight="94.0" prefWidth="223.0" text="Seat" textFill="WHITE">
                 <font>
                     <Font name="SansSerif Regular" size="36.0" />
                 </font>

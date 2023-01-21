@@ -7,7 +7,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.*;
 
-public class JsonEditor {
+public class JsonClass {
     private static int userArrayIndex = -1 ;
     private  static final String path = "src/main/resources/com/example/cat201_project/JSON_file/";
 

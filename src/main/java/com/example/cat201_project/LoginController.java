@@ -15,12 +15,9 @@ import javafx.util.Duration;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import static com.example.cat201_project.JsonEditor.getJSONObject;
 
 public class LoginController implements Initializable{
 
@@ -37,12 +34,12 @@ public class LoginController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) throws NullPointerException {
-        JSONObject userInfo = JsonEditor.getJSONObject("userInformation.json");
+        JSONObject userInfo = JsonClass.getJSONObject("userInformation.json");
         userData = (JSONArray) userInfo.get("userInfo");
         emptyTextFieldErrMsg.setVisible(false);
         errorInvalidAccMessage.setVisible(false);
-        JsonEditor.setUserArrayIndex(-1);
-        System.out.println(JsonEditor.getUserArrayIndex());
+        JsonClass.setUserArrayIndex(-1);
+        System.out.println(JsonClass.getUserArrayIndex());
     }
 
     public void validateLogin(ActionEvent e) throws IOException {
@@ -57,8 +54,8 @@ public class LoginController implements Initializable{
 
             if( tempUserID.equals(userID) && tempUserPw.equals(userPw)) {
                 System.out.println("you have logined");
-                JsonEditor.setUserArrayIndex(i);
-                System.out.println("your index is "+ JsonEditor.getUserArrayIndex());
+                JsonClass.setUserArrayIndex(i);
+                System.out.println("your index is "+ JsonClass.getUserArrayIndex());
                 isValidAcc = true;
                 changeToHomePageScene();
             }

@@ -24,7 +24,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class HomeController {
+public class HomeController implements Initializable
+{
     @FXML private Button searchButton;
     @FXML private TextField searchTextField;
     @FXML private Text noMovieErrorMsg;
@@ -70,4 +71,297 @@ public class HomeController {
     @FXML private Text comingSoonMovieText2;
     @FXML private Text comingSoonMovieDate1;
     @FXML private Text comingSoonMovieDate2;
+
+    private JSONArray movieData = null;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle)
+    {
+        JSONObject movieInfo = getJSONObject("movieInfo.json");
+        movieData = (JSONArray)movieInfo.get("movieInfo");
+
+        noMovieErrorMsg.setVisible(false);
+        ComingSoonPane.setVisible(false);
+
+        //Load 10 images from resources and display it out
+        for(int i = 0; i < movieData.size(); i++)
+        {
+            Image image = null;
+            try
+            {
+                String moviePhotoSource = (((JSONObject)movieData.get(i)).get("moviePhoto")).toString();
+                image = new Image(new FileInputStream(moviePhotoSource));
+            } catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            switch (i)
+            {
+                case 0 -> popularMovieImage.setImage(image);
+                case 1 -> movieImage1.setImage(image);
+                case 2 -> movieImage2.setImage(image);
+                case 3 -> movieImage3.setImage(image);
+                case 4 -> movieImage4.setImage(image);
+                case 5 -> movieImage5.setImage(image);
+                case 6 -> movieImage6.setImage(image);
+                case 7 -> movieImage7.setImage(image);
+                case 8 -> movieImage8.setImage(image);
+                case 9 -> movieImage9.setImage(image);
+                case 10 -> movieImage10.setImage(image);
+            }
+        }
+    }
+
+    //When the search button is clicked
+    public void searchFunction (MouseEvent event) throws IOException
+    {
+        for(int i = 0; i < movieData.size(); i++){
+            //Get the input and its lower case input from user
+            String userInputSearch = searchTextField.getText();
+            String userInputSearchLower = userInputSearch.toLowerCase();
+            //search the array to get the movie name
+            String movieName = (((JSONObject)movieData.get(i)).get("movieName")).toString();
+            String movieNameLower = movieName.toLowerCase();
+
+            //if the user input movie name is same as the movie name in array
+            //Change scene to display the movie info
+            if(userInputSearch.equals(movieName) || userInputSearchLower.equals(movieNameLower)){
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+                Stage stage = (Stage) searchButton.getScene().getWindow();
+                stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+                MovieController controller = fxmlLoader.getController();
+                controller.initialize(i);
+                stage.show();
+                break;
+            }
+
+            //if the input of movie name is not found
+            //display error message
+            else {
+                noMovieErrorMsg.setVisible(true);
+                FadeTransition fadeMessage = new FadeTransition(Duration.millis(6000), noMovieErrorMsg);
+                fadeMessage.setFromValue(1);
+                fadeMessage.setToValue(0);
+                fadeMessage.play();
+            }
+        }
+    }
+
+    //to read JSON file and store in object
+    private static JSONObject getJSONObject(String fileName)
+    {
+        try
+        {
+            FileReader reader = new FileReader("src/main/resources/com/example/cat201_project/JSON_file/" + fileName);
+            JSONParser jsonParser = new JSONParser();
+            Object obj = jsonParser.parse(reader);
+            return (JSONObject) obj;
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    //When the coming soon button is clicked
+    public void ComingSoonButton(ActionEvent event) {
+        ComingSoonPane.setVisible(true);
+
+        for(int i = 14; i < movieData.size(); i++)
+        {
+            Image image = null;
+            try
+            {
+                String moviePhotoSource = (((JSONObject)movieData.get(i)).get("moviePhoto")).toString();
+                image = new Image(new FileInputStream(moviePhotoSource));
+            } catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+
+            switch (i)
+            {
+                case 14 -> comingSoonMovieImg1.setImage(image);
+                case 15 -> comingSoonMovieImg2.setImage(image);
+            }
+        }
+
+        for(int i = 14; i < movieData.size(); i++){
+            String movieTittle = (((JSONObject)movieData.get(i)).get("movieName")).toString();
+            String movieReleaseDate = (((JSONObject)movieData.get(i)).get("movieDescription")).toString();
+
+            switch (i)
+            {
+                case 14 -> {
+                    comingSoonMovieText1.setText(movieTittle);
+                    comingSoonMovieDate1.setText(movieReleaseDate);
+                }
+                case 15 -> {
+                    comingSoonMovieText2.setText(movieTittle);
+                    comingSoonMovieDate2.setText(movieReleaseDate);
+                }
+            }
+        }
+
+
+
+
+    }
+
+    //when the now showing button is clicked
+    public void nowShowingButton(ActionEvent event) {
+        ComingSoonPane.setVisible(false);
+    }
+
+    public void ChangetoMovieInfoScene0(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieInfoButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(0);
+        stage.show();
+    }
+
+    //When the first row 1st movie image is clicked
+    public void ChangetoMovieInfoScene1(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton1.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(1);
+        stage.show();
+    }
+
+    //When the first row 2nd movie image is clicked
+    public void ChangetoMovieInfoScene2(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton2.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(2);
+        stage.show();
+    }
+
+    //When the first row 3rd movie image is clicked
+    public void ChangetoMovieInfoScene3(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton3.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(3);
+        stage.show();
+    }
+
+    //When the first row 4th movie image is clicked
+    public void ChangetoMovieInfoScene4(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton4.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(4);
+        stage.show();
+    }
+
+    //When the first row 5th movie image is clicked
+    public void ChangetoMovieInfoScene5(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton5.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(5);
+        stage.show();
+    }
+
+    //When the second row 1st movie image is clicked
+    public void ChangetoMovieInfoScene6(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton6.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(6);
+        stage.show();
+    }
+
+    //When the second row 2nd movie image is clicked
+    public void ChangetoMovieInfoScene7(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton7.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(7);
+        stage.show();
+    }
+
+    //When the second row 3rd movie image is clicked
+    public void ChangetoMovieInfoScene8(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton8.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(8);
+        stage.show();
+    }
+
+    //When the second row 4th movie image is clicked
+    public void ChangetoMovieInfoScene9(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton9.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(9);
+        stage.show();
+    }
+
+    //When the second row 5th movie image is clicked
+    public void ChangetoMovieInfoScene10(MouseEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
+        Stage stage = (Stage) movieButton10.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        MovieController controller = fxmlLoader.getController();
+        controller.initialize(10);
+        stage.show();
+    }
+
+    //When book now button is clicked
+//    public void bookNowButtonClicked(ActionEvent event) throws IOException
+//    {
+//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("buy-ticket.fxml"));
+//        Stage stage = (Stage) bookNowButton.getScene().getWindow();
+//        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+//        BuyTicketController controller = fxmlLoader.getController();
+//        controller.initialize(0);
+//        stage.show();
+//    }
+
+    //change scene to see booked ticket
+    public void bookedTicketButtonClicked(ActionEvent event) throws IOException
+    {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ticketHistory.fxml"));
+        Stage stage = (Stage) bookedTicketButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.show();
+
+    }
+
+    //change scene back to login page
+    public void logOutButtonClicked(ActionEvent event) throws IOException
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+        Stage stage = (Stage) logOutButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 957, 720));
+        stage.show();
+    }
+
+    //change scene to profile page
+    public void profileButtonClicked(ActionEvent event) throws IOException
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfile.fxml"));
+        Stage stage = (Stage) profileButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.show();
+    }
+
+
+
 }

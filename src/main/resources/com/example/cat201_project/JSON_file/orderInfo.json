@@ -1,0 +1,7 @@
+{"orderInfo":
+  [
+  {"Ticket":"1","Movie":"Sakra","UserID":"test1","Total":"RM50.00","Poster":"src\/main\/resources\/com\/example\/cat201_project\/img\/DemonSlayer.jpg","Time":"09:00 am","Date":"30\/01\/2022","Seats":"C03, B05"},
+    {"Ticket":"2","Movie":"Megan","UserID":"test1","Total":"RM50.00","Poster":"src\/main\/resources\/com\/example\/cat201_project\/img\/cruella.jpg","Time":"03:30 pm","Date":"30\/01\/2022","Seats":"B06, B05"},
+    {"Ticket":"3","Movie":"PLANE","UserID":"test1","Total":"RM75.00","Poster":"src\/main\/resources\/com\/example\/cat201_project\/img\/DemonSlayer.jpg","Time":"09:00 am","Date":"30\/01\/2022","Seats":"C06  C08  C07"}
+  ]
+}
