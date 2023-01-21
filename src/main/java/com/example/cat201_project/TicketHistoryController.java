@@ -42,7 +42,7 @@ public class TicketHistoryController implements Initializable {
         for(int i = 0 ; i < bookedTickets.size() ;  i++){
 
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("bookedTicketCard.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("ticketHistory.fxml"));
 
             try {
                 HBox hBox = fxmlLoader.load();
@@ -59,7 +59,7 @@ public class TicketHistoryController implements Initializable {
         List<TicketHistory> list = new ArrayList<>();
         String movie,QR,time,date,seats;
 
-        JSONObject ticketInfo = JsonClass.getJSONObject("orderInfo.json");
+        JSONObject ticketInfo = JsonClass.getJSONObject("orderData.json");
         JSONArray array = (JSONArray) ticketInfo.get("orderInfo");
         JSONArray ticketArray = null;
 

@@ -77,13 +77,12 @@ public class HomeController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
-        JSONObject movieInfo = getJSONObject("movieInfo.json");
+        JSONObject movieInfo = getJSONObject("movieData.json");
         movieData = (JSONArray)movieInfo.get("movieInfo");
 
         noMovieErrorMsg.setVisible(false);
         ComingSoonPane.setVisible(false);
 
-        //Load 10 images from resources and display it out
         for(int i = 0; i < movieData.size(); i++)
         {
             Image image = null;
@@ -112,7 +111,6 @@ public class HomeController implements Initializable
         }
     }
 
-    //When the search button is clicked
     public void searchFunction (MouseEvent event) throws IOException
     {
         for(int i = 0; i < movieData.size(); i++){
@@ -147,7 +145,6 @@ public class HomeController implements Initializable
         }
     }
 
-    //to read JSON file and store in object
     private static JSONObject getJSONObject(String fileName)
     {
         try
@@ -163,7 +160,6 @@ public class HomeController implements Initializable
         }
     }
 
-    //When the coming soon button is clicked
     public void ComingSoonButton(ActionEvent event) {
         ComingSoonPane.setVisible(true);
 
@@ -208,7 +204,6 @@ public class HomeController implements Initializable
 
     }
 
-    //when the now showing button is clicked
     public void nowShowingButton(ActionEvent event) {
         ComingSoonPane.setVisible(false);
     }
@@ -222,7 +217,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the first row 1st movie image is clicked
     public void ChangetoMovieInfoScene1(MouseEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton1.getScene().getWindow();
@@ -232,7 +226,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the first row 2nd movie image is clicked
     public void ChangetoMovieInfoScene2(MouseEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton2.getScene().getWindow();
@@ -242,7 +235,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the first row 3rd movie image is clicked
     public void ChangetoMovieInfoScene3(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton3.getScene().getWindow();
@@ -252,7 +244,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the first row 4th movie image is clicked
     public void ChangetoMovieInfoScene4(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton4.getScene().getWindow();
@@ -262,7 +253,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the first row 5th movie image is clicked
     public void ChangetoMovieInfoScene5(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton5.getScene().getWindow();
@@ -272,7 +262,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the second row 1st movie image is clicked
     public void ChangetoMovieInfoScene6(MouseEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton6.getScene().getWindow();
@@ -282,7 +271,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the second row 2nd movie image is clicked
     public void ChangetoMovieInfoScene7(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton7.getScene().getWindow();
@@ -292,7 +280,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the second row 3rd movie image is clicked
     public void ChangetoMovieInfoScene8(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton8.getScene().getWindow();
@@ -302,7 +289,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the second row 4th movie image is clicked
     public void ChangetoMovieInfoScene9(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton9.getScene().getWindow();
@@ -312,7 +298,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When the second row 5th movie image is clicked
     public void ChangetoMovieInfoScene10(MouseEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("movie.fxml"));
         Stage stage = (Stage) movieButton10.getScene().getWindow();
@@ -322,18 +307,16 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //When book now button is clicked
-//    public void bookNowButtonClicked(ActionEvent event) throws IOException
-//    {
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("buy-ticket.fxml"));
-//        Stage stage = (Stage) bookNowButton.getScene().getWindow();
-//        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
-//        BuyTicketController controller = fxmlLoader.getController();
-//        controller.initialize(0);
-//        stage.show();
-//    }
+    public void bookNowButtonClicked(ActionEvent event) throws IOException
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("purchaseTicket.fxml"));
+        Stage stage = (Stage) bookNowButton.getScene().getWindow();
+        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        PurchaseTicketController controller = fxmlLoader.getController();
+        controller.initialize(0);
+        stage.show();
+    }
 
-    //change scene to see booked ticket
     public void bookedTicketButtonClicked(ActionEvent event) throws IOException
     {
 
@@ -344,7 +327,6 @@ public class HomeController implements Initializable
 
     }
 
-    //change scene back to login page
     public void logOutButtonClicked(ActionEvent event) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
@@ -353,7 +335,6 @@ public class HomeController implements Initializable
         stage.show();
     }
 
-    //change scene to profile page
     public void profileButtonClicked(ActionEvent event) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfile.fxml"));

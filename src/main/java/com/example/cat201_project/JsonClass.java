@@ -16,7 +16,7 @@ public class JsonClass {
         return userArrayIndex;
     }
     public static JSONObject getCurrentUserInfo() throws IOException, ParseException {
-        String targetFilePath = path + "userInformation.json";
+        String targetFilePath = path + "userData.json";
         File inputFile = new File(targetFilePath);
 
         JSONParser parser = new JSONParser();

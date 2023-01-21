@@ -43,20 +43,15 @@ public class SignUpController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // set not visible to all the error message
         setErrLabelVisibility(false);
         System.out.println(JsonClass.getUserArrayIndex());
-        // get all the data from userInformation.json
-        JSONObject userInfo = JsonClass.getJSONObject("userInformation.json");
+        JSONObject userInfo = JsonClass.getJSONObject("userData.json");
         userData = (JSONArray) userInfo.get("userInfo");
     }
 
     public void signUp(ActionEvent e) throws IOException, ParseException, InterruptedException {
         validateSignUp();
 
-        // If all error message is NOT visible, then execute
-        // All error message not visible indicates all data is correct
-        // Add newly registered user information into userInformation.json
 
         if(!isErrLabelVisible()){
             // add data into json file
@@ -66,7 +61,7 @@ public class SignUpController implements Initializable{
             newUserAcc.put("password",userPw);
             newUserAcc.put("email",userEmail);
 
-            JsonClass.addInfo("userInformation.json",newUserAcc);
+            JsonClass.addInfo("userData.json",newUserAcc);
 
             System.out.println("SUCCESSFULLY SIGN UP !!");
             setAllTextFieldEmpty();
@@ -92,10 +87,8 @@ public class SignUpController implements Initializable{
         userName = userNameTextField.getText();
         userPw = pwTextField.getText();
         userReEnterPw = reEnterPwTextField.getText();
-        String tempUserEmail, tempUserID, tempUserName; // these are data from the json file
+        String tempUserEmail, tempUserID, tempUserName; 
 
-        // compare the text field value with data in userInformation.json
-        // if is existed in userInformation.json, display error message
 
         for(int i = 0; i < userData.size(); i++){
             tempUserEmail = (((JSONObject)userData.get(i)).get("email")).toString();

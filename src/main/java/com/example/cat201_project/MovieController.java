@@ -36,7 +36,7 @@ public class MovieController {
     public void initialize(int i)
     {
         movieIndex =i;
-        JSONObject movieInfo = getJSONObject("movieInfo.json");
+        JSONObject movieInfo = getJSONObject("movieData.json");
         movieData = (JSONArray) movieInfo.get("movieInfo");
 
         for(int j = 0; j < movieData.size(); j++)
@@ -91,7 +91,6 @@ public class MovieController {
 //        stage.show();
 //    }
 
-    //change scene to see booked ticket
     public void bookedTicketButtonClicked(ActionEvent event) throws IOException
     {
 
@@ -102,7 +101,6 @@ public class MovieController {
 
     }
 
-    //change scene back to login page
     public void logOutButtonClicked(ActionEvent event) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
@@ -111,7 +109,6 @@ public class MovieController {
         stage.show();
     }
 
-    //change scene to profile page
     public void profileButtonClicked(ActionEvent event) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userProfile.fxml"));

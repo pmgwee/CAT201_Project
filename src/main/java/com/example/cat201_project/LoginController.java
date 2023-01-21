@@ -34,7 +34,7 @@ public class LoginController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) throws NullPointerException {
-        JSONObject userInfo = JsonClass.getJSONObject("userInformation.json");
+        JSONObject userInfo = JsonClass.getJSONObject("userData.json");
         userData = (JSONArray) userInfo.get("userInfo");
         emptyTextFieldErrMsg.setVisible(false);
         errorInvalidAccMessage.setVisible(false);
@@ -47,7 +47,6 @@ public class LoginController implements Initializable{
         String userPw = userPwTextField.getText();
         boolean isValidAcc = false;
 
-        // get all the data from userInformation.json
         for(int i = 0; i < userData.size(); i++){
             String tempUserID = (((JSONObject)userData.get(i)).get("userID")).toString();
             String tempUserPw = (((JSONObject)userData.get(i)).get("password")).toString();
@@ -61,7 +60,6 @@ public class LoginController implements Initializable{
             }
         }
 
-        // if no account is found on userInformation.json , display error message
         if(userID.isEmpty() || userPw.isEmpty()){
 
             if(errorInvalidAccMessage.isVisible())
