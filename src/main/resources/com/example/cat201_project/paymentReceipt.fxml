@@ -48,9 +48,9 @@
                      </font>
                   </Text>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="710.0" layoutY="283.0" stroke="BLACK" strokeType="INSIDE" width="232.0" />
-                  <Text fx:id="Seats" layoutX="728.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="193.5660400390625">
+                  <Text fx:id="Seats" layoutX="728.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="193.5660400390625">
                      <font>
-                        <Font name="SansSerif Regular" size="48.0" />
+                        <Font name="SansSerif Regular" size="22.89" />
                      </font>
                   </Text>
                   <Line endX="663.3999633789062" layoutX="283.0" layoutY="433.0" startX="-0.60003662109375" stroke="WHITE" />
