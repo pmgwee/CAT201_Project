@@ -1,11 +1,11 @@
 {
-  "movieTimeSeat0":
+  "movieTimeSeat12":
   [
     {
-      "movieID":"0",
-      "movieName" : "Avatar: The Way Of Water",
+      "movieID":"12",
+      "movieName" : "Thunivu",
       "movieTimeSlot" : "09:00 am",
-      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/avatarPoster2.jpeg" ,
+      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/thunivuPoster.jpg" ,
       "movieSeatA01": true,
       "movieSeatA02": true,
       "movieSeatA03": true,
@@ -56,8 +56,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"0",
-      "movieName" : "Avatar: The Way Of Water",
+      "movieID":"12",
+      "movieName" : "Thunivu",
       "movieTimeSlot" : "11:30 am",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -109,8 +109,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"0",
-      "movieName" : "Avatar: The Way Of Water",
+      "movieID":"12",
+      "movieName" : "Thunivu",
       "movieTimeSlot" : "01:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -162,8 +162,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"0",
-      "movieName" : "Avatar: The Way Of Water",
+      "movieID":"12",
+      "movieName" : "Thunivu",
       "movieTimeSlot" : "03:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -215,8 +215,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"0",
-      "movieName" : "Avatar: The Way Of Water",
+      "movieID":"12",
+      "movieName" : "Thunivu",
       "movieTimeSlot" : "08:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,

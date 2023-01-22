@@ -1,11 +1,11 @@
 {
-  "movieTimeSeat4":
+  "movieTimeSeat11":
   [
     {
-      "movieID":"4",
-      "movieName" : "What!The Heist",
+      "movieID":"11",
+      "movieName" : "Black Adam",
       "movieTimeSlot" : "09:00 am",
-      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/heistPoster.jpg" ,
+      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/blackadamPoster.jpg" ,
       "movieSeatA01": true,
       "movieSeatA02": true,
       "movieSeatA03": true,
@@ -56,8 +56,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"4",
-      "movieName" : "What!The Heist",
+      "movieID":"11",
+      "movieName" : "Black Adam",
       "movieTimeSlot" : "11:30 am",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -109,8 +109,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"4",
-      "movieName" : "What!The Heist",
+      "movieID":"11",
+      "movieName" : "Black Adam",
       "movieTimeSlot" : "01:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -162,8 +162,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"4",
-      "movieName" : "What!The Heist",
+      "movieID":"11",
+      "movieName" : "Black Adam",
       "movieTimeSlot" : "03:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -215,8 +215,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"4",
-      "movieName" : "What!The Heist",
+      "movieID":"11",
+      "movieName" : "Black Adam",
       "movieTimeSlot" : "08:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,

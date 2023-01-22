@@ -1,11 +1,11 @@
 {
-  "movieTimeSeat1":
+  "movieTimeSeat13":
   [
     {
-      "movieID":"1",
-      "movieName" : "The Wandering Earth 2",
+      "movieID":"13",
+      "movieName" : "Mechamato Movie",
       "movieTimeSlot" : "09:00 am",
-      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/wanderingPoster.jpg" ,
+      "moviePosterPath":"src/main/resources/com/example/cat201_project/public/mechaPoster.jpg" ,
       "movieSeatA01": true,
       "movieSeatA02": true,
       "movieSeatA03": true,
@@ -56,8 +56,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"1",
-      "movieName" : "The Wandering Earth 2",
+      "movieID":"13",
+      "movieName" : "Mechamato Movie",
       "movieTimeSlot" : "11:30 am",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -109,8 +109,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"1",
-      "movieName" : "The Wandering Earth 2",
+      "movieID":"13",
+      "movieName" : "Mechamato Movie",
       "movieTimeSlot" : "01:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -162,8 +162,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"1",
-      "movieName" : "The Wandering Earth 2",
+      "movieID":"13",
+      "movieName" : "Mechamato Movie",
       "movieTimeSlot" : "03:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,
@@ -215,8 +215,8 @@
       "movieSeatD12": true
     },
     {
-      "movieID":"1",
-      "movieName" : "The Wandering Earth 2",
+      "movieID":"13",
+      "movieName" : "Mechamato Movie",
       "movieTimeSlot" : "08:30 pm",
       "movieSeatA01": true,
       "movieSeatA02": true,

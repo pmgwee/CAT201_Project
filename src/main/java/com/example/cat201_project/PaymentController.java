@@ -63,11 +63,30 @@ public class PaymentController implements  Initializable{
         CardYearErrMessage.setVisible(false);
         CVVErrMessage.setVisible(false);
 
+//        String T = PurchaseTicketController.OrderedTicket;
+//        String TOT = PurchaseTicketController.OrderedTotal;
+//
+//        //Initialise movie details
+//        Ticket.setText(T);
+//        Total.setText(TOT);
+//
+//        //Initialise movie poster
+//        Image image;
+//        try
+//        {
+//            String moviePosterSource = PurchaseTicketController.OrderedPoster;
+//            image = new Image(new FileInputStream(moviePosterSource));
+//            MoviePoster.setImage(image);
+//
+//        } catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
     }
 
     //Change back to Select Payment scene when user click Back button
     public void handleBackBttn() throws IOException, RuntimeException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("checkoutTicket.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("payment.fxml"));
         Stage stage = (Stage) back.getScene().getWindow();
         stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
         stage.show();
@@ -95,7 +114,7 @@ public class PaymentController implements  Initializable{
     }
 
     public void handleCancelBttn() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("checkoutTicket.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("payment.fxml"));
         Stage stage = (Stage) cancel.getScene().getWindow();
         stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
         stage.show();
@@ -156,7 +175,7 @@ public class PaymentController implements  Initializable{
             System.out.println("Sucessfully updated Movie File");
             updateOrderInfoFile();
             System.out.println("Sucessfully updated Order Info File");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("receipt.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("paymentReceipt.fxml"));
             Stage stage = (Stage) pay.getScene().getWindow();
             stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
             stage.show();
