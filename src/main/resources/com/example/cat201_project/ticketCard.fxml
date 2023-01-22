@@ -8,22 +8,22 @@
    <children>
       <Label fx:id="movieName" alignment="CENTER" prefHeight="74.0" prefWidth="571.0" stylesheets="@css/ticketCard.css" text="Movie" textFill="WHITE">
          <font>
-            <Font name="SansSerif Regular" size="30.0" />
+            <Font name="SansSerif Regular" size="35.0" />
          </font>
       </Label>
       <Label fx:id="date" alignment="CENTER" prefHeight="188.0" prefWidth="194.0" text="Date" textFill="WHITE">
          <font>
-            <Font name="SansSerif Regular" size="30.0" />
+            <Font name="SansSerif Regular" size="35.0" />
          </font>
       </Label>
       <Label fx:id="time" alignment="CENTER" prefHeight="99.0" prefWidth="255.0" text="Time" textFill="WHITE">
          <font>
-            <Font name="SansSerif Regular" size="30.0" />
+            <Font name="SansSerif Regular" size="35.0" />
          </font>
       </Label>
       <Label fx:id="seat" alignment="CENTER" prefHeight="94.0" prefWidth="223.0" text="Seat" textFill="WHITE">
          <font>
-            <Font name="SansSerif Regular" size="30.0" />
+            <Font name="SansSerif Regular" size="36.0" />
          </font>
       </Label>
    </children>
