@@ -1,9 +1,1 @@
-{
-  "userInfo":
-  [
-    {"password":"user","userName":"user","userID":"user","email":"leeahming199@gmail.com"},
-    {"password":"test","userName":"test","userID":"test","email":"test@gmail.com"},
-    {"password":"admin","userName":"admin","userID":"admin","email":"admin@gmail.com"},
-    {"password":"system","userName":"system","userID":"system","email":"leeahming123@gmail.com"}
-  ]
-}
+{"userInfo":[{"password":"user","userName":"user","userID":"user","email":"leeahming199@gmail.com"},{"password":"test","userName":"test","userID":"test","email":"test@gmail.com"},{"password":"admin","userName":"admin","userID":"admin","email":"admin@gmail.com"},{"password":"system","userName":"system","userID":"system","email":"leeahming123@gmail.com"},{"password":"xiao","userName":"xiao","userID":"#$%#$","email":"leexiaoming123@gmail.com"},{"password":"debug","userName":"debug","userID":"debug","email":"leexiaoxiao123@gmail.com"}]}
