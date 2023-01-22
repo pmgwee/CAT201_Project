@@ -4,6 +4,7 @@ public class TicketHistory {
     private String date;
     private String time;
     private String seat;
+
     public void printData(){
         System.out.println(movieName);
         System.out.println(date);
@@ -11,6 +12,8 @@ public class TicketHistory {
         System.out.println(seat);
 
     }
+
+
     public String getMovieName() {
         return movieName;
     }

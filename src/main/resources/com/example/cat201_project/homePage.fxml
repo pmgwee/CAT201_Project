@@ -29,23 +29,23 @@
                     <buttons>
                         <Button fx:id="movieButton1" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene1" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage1" fitHeight="361.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage1" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                         <Button fx:id="movieButton2" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene2" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage2" fitHeight="358.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage2" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                         <Button fx:id="movieButton3" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene3" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage3" fitHeight="361.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage3" fitHeight="364.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                       <Button fx:id="movieButton4" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene4" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage4" fitHeight="368.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage4" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                       <Button fx:id="movieButton5" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene5" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage5" fitHeight="374.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage5" fitHeight="364.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                     </buttons>
                   </ButtonBar>
@@ -57,11 +57,11 @@
                            </graphic></Button>
                         <Button fx:id="movieButton7" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene7" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage7" fitHeight="358.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage7" fitHeight="364.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                         <Button fx:id="movieButton8" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene8" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>
-                              <ImageView fx:id="movieImage8" fitHeight="361.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="movieImage8" fitHeight="364.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic></Button>
                         <Button fx:id="movieButton9" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene9" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
                            <graphic>

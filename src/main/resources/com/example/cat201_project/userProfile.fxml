@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
@@ -76,29 +75,22 @@
             </font>
          </Text>
           <Pane layoutX="40.0" layoutY="23.0" prefHeight="92.0" prefWidth="1208.0">
-              <children>
-                  <HBox layoutX="1.0" layoutY="19.0" prefHeight="100.0" prefWidth="1176.0">
-                      <children>
-                          <Button fx:id="returnToMainPageBttn" mnemonicParsing="false" onAction="#returnToHomeMovieScene" prefHeight="55.0" prefWidth="62.0" styleClass="HomeButton" stylesheets="@css/userProfile.css">
-                              <graphic>
-                                  <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
-                                      <font>
-                                          <Font size="26.0" />
-                                      </font>
-                                  </FontAwesomeIconView>
-                              </graphic>
-                          </Button>
-                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="185.3367042541504">
-                              <font>
-                                  <Font size="29.0" />
-                              </font>
-                              <HBox.margin>
-                                  <Insets top="5.0" />
-                              </HBox.margin>
-                          </Text>
-                      </children>
-                  </HBox>
-              </children>
+            <children>
+                    <Button fx:id="returnToMainPageBttn" layoutX="11.0" layoutY="5.0" mnemonicParsing="false" onAction="#returnToHomeMovieScene" prefHeight="63.0" prefWidth="72.0" styleClass="HomeButton" stylesheets="@css/userProfile.css">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="HOME" size="30" text="" wrappingWidth="28.861842155456543">
+                                <font>
+                                    <Font size="26.0" />
+                                </font>
+                            </FontAwesomeIconView>
+                        </graphic>
+                    </Button>
+               <Text fill="WHITE" layoutX="99.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page">
+                  <font>
+                     <Font name="SansSerif Regular" size="30.0" />
+                  </font>
+               </Text>
+            </children>
           </Pane>
          <Text fill="WHITE" layoutX="533.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="87.61627197265625">
             <font>
@@ -110,17 +102,17 @@
                <Font name="SansSerif Regular" size="30.0" />
             </font>
          </Text>
-         <Label fx:id="userNameLabel" layoutX="639.0" layoutY="156.0" text="Name123" textFill="WHITE">
+         <Label fx:id="userNameLabel" layoutX="639.0" layoutY="156.0" text="Name123" textFill="#f8c33a">
             <font>
                <Font size="30.0" />
             </font>
          </Label>
-         <Label fx:id="userEmailLabel" layoutX="645.0" layoutY="237.0" text="Email123" textFill="WHITE">
+         <Label fx:id="userEmailLabel" layoutX="645.0" layoutY="237.0" text="Email123" textFill="#f8c33a">
             <font>
                <Font size="30.0" />
             </font>
          </Label>
-         <Label fx:id="userIDLabel" layoutX="646.0" layoutY="316.0" text="ID123" textFill="WHITE">
+         <Label fx:id="userIDLabel" layoutX="646.0" layoutY="316.0" text="ID123" textFill="#f8c33a">
             <font>
                <Font size="30.0" />
             </font>

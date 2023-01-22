@@ -105,7 +105,7 @@ public class CheckoutTicketController implements Initializable {
     public void handleBackBttn() throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homePage.fxml"));
         Stage stage = (Stage) backButton.getScene().getWindow();
-        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.setScene(new Scene(fxmlLoader.load(), 957, 720));
         stage.show();
     }
 

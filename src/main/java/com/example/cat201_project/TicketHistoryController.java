@@ -42,7 +42,7 @@ public class TicketHistoryController implements Initializable {
         for(int i = 0 ; i < bookedTickets.size() ;  i++){
 
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("ticketHistory.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("ticketCard.fxml"));
 
             try {
                 HBox hBox = fxmlLoader.load();
@@ -109,7 +109,7 @@ public class TicketHistoryController implements Initializable {
     public void returnToLogOutPage (ActionEvent e ) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
         Stage stage = (Stage) logOutBttn.getScene().getWindow();
-        stage.setScene(new Scene(fxmlLoader.load(), 1280, 720));
+        stage.setScene(new Scene(fxmlLoader.load(), 957, 720));
         stage.show();
     }
 

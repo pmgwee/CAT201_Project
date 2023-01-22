@@ -82,47 +82,47 @@ public class PurchaseTicketController {
         counter = i;
         switch(i){
             case 0:
-                JSONObject movieTimeSeat0 = getJSONObject("movieStatus0.json");
+                JSONObject movieTimeSeat0 = getJSONObject("movieTimeSeat0.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat0.get("movieTimeSeat0");
                 break;
             case 1:
-                JSONObject movieTimeSeat1 = getJSONObject("movieStatus1.json");
+                JSONObject movieTimeSeat1 = getJSONObject("movieTimeSeat1.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat1.get("movieTimeSeat1");
                 break;
             case 2:
-                JSONObject movieTimeSeat2 = getJSONObject("movieStatus2.json");
+                JSONObject movieTimeSeat2 = getJSONObject("movieTimeSeat2.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat2.get("movieTimeSeat2");
                 break;
             case 3:
-                JSONObject movieTimeSeat3 = getJSONObject("movieStatus3.json");
+                JSONObject movieTimeSeat3 = getJSONObject("movieTimeSeat3.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat3.get("movieTimeSeat3");
                 break;
             case 4:
-                JSONObject movieTimeSeat4 = getJSONObject("movieStatus4.json");
+                JSONObject movieTimeSeat4 = getJSONObject("movieTimeSeat4.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat4.get("movieTimeSeat4");
                 break;
             case 5:
-                JSONObject movieTimeSeat5 = getJSONObject("movieStatus5.json");
+                JSONObject movieTimeSeat5 = getJSONObject("movieTimeSeat5.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat5.get("movieTimeSeat5");
                 break;
             case 6:
-                JSONObject movieTimeSeat6 = getJSONObject("movieStatus6.json");
+                JSONObject movieTimeSeat6 = getJSONObject("movieTimeSeat6.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat6.get("movieTimeSeat6");
                 break;
             case 7:
-                JSONObject movieTimeSeat7 = getJSONObject("movieStatus7.json");
+                JSONObject movieTimeSeat7 = getJSONObject("movieTimeSeat7.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat7.get("movieTimeSeat7");
                 break;
             case 8:
-                JSONObject movieTimeSeat8 = getJSONObject("movieStatus8.json");
+                JSONObject movieTimeSeat8 = getJSONObject("movieTimeSeat8.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat8.get("movieTimeSeat8");
                 break;
             case 9:
-                JSONObject movieTimeSeat9 = getJSONObject("movieStatus9.json");
+                JSONObject movieTimeSeat9 = getJSONObject("movieTimeSeat9.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat9.get("movieTimeSeat9");
                 break;
             case 10:
-                JSONObject movieTimeSeat10 = getJSONObject("movieStatus10.json");
+                JSONObject movieTimeSeat10 = getJSONObject("movieTimeSeat10.json");
                 movieTimeSeatData = (JSONArray) movieTimeSeat10.get("movieTimeSeat10");
                 break;
         }
@@ -303,7 +303,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieArow = (((JSONObject) movieTimeSeatData.get(1)).get("movieSeatA0" + num)).toString();
+            String movieArow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatA0" + num)).toString();
             if(movieArow .equals("true")){
                 SeatSelection1.getItems().add("A0"+num);
                 SeatSelection2.getItems().add("A0"+num);
@@ -315,7 +315,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieBrow = (((JSONObject) movieTimeSeatData.get(1)).get("movieSeatB0" + num)).toString();
+            String movieBrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatB0" + num)).toString();
             if(movieBrow .equals("true")){
                 SeatSelection1.getItems().add("B0"+num);
                 SeatSelection2.getItems().add("B0"+num);
@@ -327,7 +327,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieCrow = (((JSONObject) movieTimeSeatData.get(1)).get("movieSeatC0" + num)).toString();
+            String movieCrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatC0" + num)).toString();
             if(movieCrow .equals("true")){
                 SeatSelection1.getItems().add("C0"+num);
                 SeatSelection2.getItems().add("C0"+num);
@@ -336,6 +336,19 @@ public class PurchaseTicketController {
                 SeatSelection5.getItems().add("C0"+num);
             }
         }
+        for (int j=1; j<=8;j++)
+        {
+            String num = Integer.toString(j);
+            String movieDrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatD0" + num)).toString();
+            if(movieDrow .equals("true")){
+                SeatSelection1.getItems().add("D0"+num);
+                SeatSelection2.getItems().add("D0"+num);
+                SeatSelection3.getItems().add("D0"+num);
+                SeatSelection4.getItems().add("D0"+num);
+                SeatSelection5.getItems().add("D0"+num);
+            }
+        }
+
     }
 
     public void timeButton3OnClick(ActionEvent event) {
@@ -350,7 +363,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieArow = (((JSONObject) movieTimeSeatData.get(2)).get("movieSeatA0" + num)).toString();
+            String movieArow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatA0" + num)).toString();
             if(movieArow .equals("true")){
                 SeatSelection1.getItems().add("A0"+num);
                 SeatSelection2.getItems().add("A0"+num);
@@ -362,7 +375,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieBrow = (((JSONObject) movieTimeSeatData.get(2)).get("movieSeatB0" + num)).toString();
+            String movieBrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatB0" + num)).toString();
             if(movieBrow .equals("true")){
                 SeatSelection1.getItems().add("B0"+num);
                 SeatSelection2.getItems().add("B0"+num);
@@ -374,13 +387,25 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieCrow = (((JSONObject) movieTimeSeatData.get(2)).get("movieSeatC0" + num)).toString();
+            String movieCrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatC0" + num)).toString();
             if(movieCrow .equals("true")){
                 SeatSelection1.getItems().add("C0"+num);
                 SeatSelection2.getItems().add("C0"+num);
                 SeatSelection3.getItems().add("C0"+num);
                 SeatSelection4.getItems().add("C0"+num);
                 SeatSelection5.getItems().add("C0"+num);
+            }
+        }
+        for (int j=1; j<=8;j++)
+        {
+            String num = Integer.toString(j);
+            String movieDrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatD0" + num)).toString();
+            if(movieDrow .equals("true")){
+                SeatSelection1.getItems().add("D0"+num);
+                SeatSelection2.getItems().add("D0"+num);
+                SeatSelection3.getItems().add("D0"+num);
+                SeatSelection4.getItems().add("D0"+num);
+                SeatSelection5.getItems().add("D0"+num);
             }
         }
 
@@ -398,7 +423,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieArow = (((JSONObject) movieTimeSeatData.get(3)).get("movieSeatA0" + num)).toString();
+            String movieArow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatA0" + num)).toString();
             if(movieArow .equals("true")){
                 SeatSelection1.getItems().add("A0"+num);
                 SeatSelection2.getItems().add("A0"+num);
@@ -410,7 +435,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieBrow = (((JSONObject) movieTimeSeatData.get(3)).get("movieSeatB0" + num)).toString();
+            String movieBrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatB0" + num)).toString();
             if(movieBrow .equals("true")){
                 SeatSelection1.getItems().add("B0"+num);
                 SeatSelection2.getItems().add("B0"+num);
@@ -422,13 +447,25 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieCrow = (((JSONObject) movieTimeSeatData.get(3)).get("movieSeatC0" + num)).toString();
+            String movieCrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatC0" + num)).toString();
             if(movieCrow .equals("true")){
                 SeatSelection1.getItems().add("C0"+num);
                 SeatSelection2.getItems().add("C0"+num);
                 SeatSelection3.getItems().add("C0"+num);
                 SeatSelection4.getItems().add("C0"+num);
                 SeatSelection5.getItems().add("C0"+num);
+            }
+        }
+        for (int j=1; j<=8;j++)
+        {
+            String num = Integer.toString(j);
+            String movieDrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatD0" + num)).toString();
+            if(movieDrow .equals("true")){
+                SeatSelection1.getItems().add("D0"+num);
+                SeatSelection2.getItems().add("D0"+num);
+                SeatSelection3.getItems().add("D0"+num);
+                SeatSelection4.getItems().add("D0"+num);
+                SeatSelection5.getItems().add("D0"+num);
             }
         }
     }
@@ -446,7 +483,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieArow = (((JSONObject) movieTimeSeatData.get(4)).get("movieSeatA0" + num)).toString();
+            String movieArow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatA0" + num)).toString();
             if(movieArow .equals("true")){
                 SeatSelection1.getItems().add("A0"+num);
                 SeatSelection2.getItems().add("A0"+num);
@@ -458,7 +495,7 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieBrow = (((JSONObject) movieTimeSeatData.get(4)).get("movieSeatB0" + num)).toString();
+            String movieBrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatB0" + num)).toString();
             if(movieBrow .equals("true")){
                 SeatSelection1.getItems().add("B0"+num);
                 SeatSelection2.getItems().add("B0"+num);
@@ -470,13 +507,25 @@ public class PurchaseTicketController {
         for (int j=1; j<=8;j++)
         {
             String num = Integer.toString(j);
-            String movieCrow = (((JSONObject) movieTimeSeatData.get(4)).get("movieSeatC0" + num)).toString();
+            String movieCrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatC0" + num)).toString();
             if(movieCrow .equals("true")){
                 SeatSelection1.getItems().add("C0"+num);
                 SeatSelection2.getItems().add("C0"+num);
                 SeatSelection3.getItems().add("C0"+num);
                 SeatSelection4.getItems().add("C0"+num);
                 SeatSelection5.getItems().add("C0"+num);
+            }
+        }
+        for (int j=1; j<=8;j++)
+        {
+            String num = Integer.toString(j);
+            String movieDrow = (((JSONObject) movieTimeSeatData.get(0)).get("movieSeatD0" + num)).toString();
+            if(movieDrow .equals("true")){
+                SeatSelection1.getItems().add("D0"+num);
+                SeatSelection2.getItems().add("D0"+num);
+                SeatSelection3.getItems().add("D0"+num);
+                SeatSelection4.getItems().add("D0"+num);
+                SeatSelection5.getItems().add("D0"+num);
             }
         }
     }
