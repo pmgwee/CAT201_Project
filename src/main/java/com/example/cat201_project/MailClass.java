@@ -3,12 +3,11 @@ package com.example.cat201_project;
 import javax.mail.*;
 import javax.mail.internet.*;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Scanner;
 
-public class MailSender {
+public class MailClass {
 
     public static void sendSingleCodeWithMail(String recipient, String data) throws IOException, MessagingException {
         // set basic properties configuration

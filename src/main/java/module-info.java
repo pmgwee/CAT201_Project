@@ -1,12 +1,12 @@
 module com.example.cat201_project {
     requires javafx.controls;
-    requires javafx.fxml;
-    requires json.simple;
     requires core;
+    requires javax.mail.api;
     requires qrgen;
+    requires javafx.fxml;
     requires org.kordamp.ikonli.javafx;
     requires commons.io;
-    requires javax.mail.api;
+    requires json.simple;
     requires activation;
 
 
