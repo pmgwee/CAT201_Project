@@ -65,6 +65,8 @@ public class HomeController implements Initializable
     @FXML private Button movieButton10;
 
     @FXML private AnchorPane ComingSoonPane;
+
+    @FXML private AnchorPane OpeningNowPane;
     @FXML private ImageView comingSoonMovieImg1;
     @FXML private ImageView comingSoonMovieImg2;
     @FXML private Text comingSoonMovieText1;
@@ -162,6 +164,8 @@ public class HomeController implements Initializable
 
     public void ComingSoonButton(ActionEvent event) {
         ComingSoonPane.setVisible(true);
+        OpeningNowPane.setVisible(false);
+
 
         for(int i = 14; i < movieData.size(); i++)
         {
@@ -206,6 +210,7 @@ public class HomeController implements Initializable
 
     public void nowShowingButton(ActionEvent event) {
         ComingSoonPane.setVisible(false);
+        OpeningNowPane.setVisible(true);
     }
 
     public void ChangetoMovieInfoScene0(MouseEvent event) throws IOException {

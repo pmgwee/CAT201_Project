@@ -25,78 +25,104 @@
                      <font>
                         <Font name="SansSerif Regular" size="12.0" />
                      </font></Button>
-                  <ButtonBar layoutX="6.0" layoutY="950.0" prefHeight="330.0" prefWidth="1242.0">
-                    <buttons>
-                        <Button fx:id="movieButton1" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene1" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage1" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton2" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene2" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage2" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton3" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene3" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage3" fitHeight="364.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                      <Button fx:id="movieButton4" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene4" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage4" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                      <Button fx:id="movieButton5" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene5" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage5" fitHeight="364.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                    </buttons>
-                  </ButtonBar>
-                  <ButtonBar layoutX="13.0" layoutY="1350.0" prefHeight="330.0" prefWidth="1242.0">
-                    <buttons>
-                        <Button fx:id="movieButton6" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene6" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage6" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton7" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene7" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage7" fitHeight="364.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton8" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene8" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage8" fitHeight="364.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton9" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene9" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage9" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                        <Button fx:id="movieButton10" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene10" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
-                           <graphic>
-                              <ImageView fx:id="movieImage10" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic></Button>
-                    </buttons>
-                  </ButtonBar>
-                  <Pane layoutX="-2.0" layoutY="720.0" prefHeight="231.0" prefWidth="1259.0">
+                  <AnchorPane fx:id="OpeningNowPane" layoutY="707.0" prefHeight="1209.0" prefWidth="1270.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="707.0">
                      <children>
-                        <ButtonBar layoutY="32.0" prefHeight="130.0" prefWidth="635.0">
+                        <ButtonBar layoutY="200.0" prefHeight="330.0" prefWidth="1242.0">
                           <buttons>
-                            <Button fx:id="nowShowingButton" mnemonicParsing="false" onAction="#nowShowingButton" prefHeight="55.0" prefWidth="300.0" stylesheets="@css/homePage.css" text="Opening This Week" />
-                              <Button fx:id="comingSoonButton" mnemonicParsing="false" onAction="#ComingSoonButton" prefHeight="54.0" prefWidth="398.0" stylesheets="@css/homePage.css" text="Opening Soon" />
+                              <Button fx:id="movieButton1" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene1" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage1" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton2" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene2" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage2" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton3" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene3" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage3" fitHeight="364.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                            <Button fx:id="movieButton4" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene4" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage4" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                            <Button fx:id="movieButton5" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene5" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage5" fitHeight="364.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                          </buttons>
+                        </ButtonBar>
+                        <ButtonBar layoutY="560.0" prefHeight="330.0" prefWidth="1242.0">
+                          <buttons>
+                              <Button fx:id="movieButton6" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene6" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage6" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton7" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene7" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage7" fitHeight="364.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton8" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene8" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage8" fitHeight="364.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton9" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene9" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage9" fitHeight="364.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="movieButton10" mnemonicParsing="false" onMouseClicked="#ChangetoMovieInfoScene10" styleClass="ImageButton" stylesheets="@css/homePage.css" text="Button">
+                                 <graphic>
+                                    <ImageView fx:id="movieImage10" fitHeight="364.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
                           </buttons>
                         </ButtonBar>
                      </children>
-                  </Pane>
+                  </AnchorPane>
                   <Text fill="WHITE" layoutX="227.0" layoutY="1850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@HeongMadihubci 2023" textAlignment="CENTER" wrappingWidth="866.936767578125">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font></Text>
-                  <AnchorPane fx:id="ComingSoonPane" layoutY="912.0" prefHeight="1003.0" prefWidth="1259.0">
+                  <AnchorPane fx:id="ComingSoonPane" layoutY="867.0" prefHeight="1049.0" prefWidth="1259.0">
                      <children>
-                        <ImageView fx:id="comingSoonMovieImg1" fitHeight="450.0" fitWidth="450.0" layoutX="140.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fx:id="comingSoonMovieImg2" fitHeight="450.0" fitWidth="450.0" layoutX="141.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" />
-                        <Text fx:id="comingSoonMovieText1" layoutX="666.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="511.73651027679443" />
-                        <Text fx:id="comingSoonMovieDate1" layoutX="666.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="511.7367534637451" />
-                        <Text fx:id="comingSoonMovieText2" layoutX="666.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="511.73699712753296" />
-                        <Text fx:id="comingSoonMovieDate2" layoutX="666.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="511.73654556274414" />
+                        <ImageView fx:id="comingSoonMovieImg1" fitHeight="380.0" fitWidth="318.0" layoutX="100.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="comingSoonMovieImg2" fitHeight="380.0" fitWidth="318.0" layoutX="100.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true" />
+                        <Text fx:id="comingSoonMovieText1" fill="#f8c33a" layoutX="470.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="700.0">
+                           <font>
+                              <Font name="SansSerif Regular" size="41.89" />
+                           </font>
+                        </Text>
+                        <Text fx:id="comingSoonMovieDate1" fill="WHITE" layoutX="470.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="700.0">
+                           <font>
+                              <Font name="SansSerif Regular" size="22.89" />
+                           </font>
+                        </Text>
+                        <Text fx:id="comingSoonMovieText2" fill="#f8c33a" layoutX="470.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="700.0">
+                           <font>
+                              <Font name="SansSerif Regular" size="41.89" />
+                           </font>
+                        </Text>
+                        <Text fx:id="comingSoonMovieDate2" fill="WHITE" layoutX="470.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="700.0">
+                           <font>
+                              <Font name="SansSerif Regular" size="22.89" />
+                           </font>
+                        </Text>
                      </children>
                   </AnchorPane>
+                  <ButtonBar layoutX="57.0" layoutY="774.0" prefHeight="130.0" prefWidth="635.0">
+                    <buttons>
+                      <Button fx:id="nowShowingButton" mnemonicParsing="false" onAction="#nowShowingButton" prefHeight="55.0" prefWidth="300.0" stylesheets="@css/homePage.css" text="Opening This Week" />
+                        <Button fx:id="comingSoonButton" mnemonicParsing="false" onAction="#ComingSoonButton" prefHeight="54.0" prefWidth="398.0" stylesheets="@css/homePage.css" text="Opening Soon" />
+                    </buttons>
+                  </ButtonBar>
                </children>
             </AnchorPane>
          </content></ScrollPane>

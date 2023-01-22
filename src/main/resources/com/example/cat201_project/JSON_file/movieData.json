@@ -124,7 +124,7 @@
             },{
               "movieID": "14",
               "movieName": "Sword Art Online The Movie",
-              "movieDescription": "It’s been just two months since they were trapped in the game of death that is Sword Art Online, and Kirito and Asuna continue their struggle at the vanguard of progress through the game.",
+              "movieDescription": "It’s been just two months since they were trapped in the game of death that is Sword Art Online, and Kirito and Asuna continue their struggle at the vanguard of progress through the game. The fifth floor of Aincrad is a mazelike ruin, and the two dare to take pleasure in raiding it for the treasure it contains. Upon returning to the fourth floor, it’s time to do some questing on behalf of the Elf Lord Yofilis–but here begins Asuna’s discontent, for in doing so they will have to face her least favorite monster ever…",
               "movieCast": "Yoshitsugu Matsuoka, Haruka Tomatsu, Inori Minase, Hiroki Yasumoto",
               "movieDirector": "Ayako Kono",
               "moviePhoto": "src/main/resources/com/example/cat201_project/public/swordart.jpg",
@@ -132,7 +132,7 @@
             },{
               "movieID": "15",
               "movieName": "Black Panther: Wakanda Forever",
-              "movieDescription": "Queen Ramonda, Shuri, M`Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T`Challa`s death.",
+              "movieDescription": "Queen Ramonda, Shuri, M`Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T`Challa`s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
               "movieCast": "Lupita Nyong'o, Danai Gurira, Martin Freeman, Letitia Wright, Winston Duke, Angela Bassett",
               "movieDirector": "Ryan Coogler",
               "moviePhoto": "src/main/resources/com/example/cat201_project/public/wankanda.jpg",
