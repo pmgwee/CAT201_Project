@@ -1,0 +1,9 @@
+{
+  "userInfo":
+  [
+    {"password":"user","userName":"user","userID":"user","email":"leeahming199@gmail.com"},
+    {"password":"test1","userName":"test1","userID":"test1","email":"test@gmail.com"},
+    {"password":"admin","userName":"admin","userID":"admin","email":"admin@gmail.com"},
+    {"password":"system","userName":"system","userID":"system","email":"leeahming123@gmail.com"}
+  ]
+}

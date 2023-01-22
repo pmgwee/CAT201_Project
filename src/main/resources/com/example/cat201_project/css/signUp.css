@@ -1,0 +1,21 @@
+.textField{
+    -fx-font-weight: normal;
+    -fx-font-size: 18 px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #E5E5E5;
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #FF003C;
+    -fx-text-fill:white;
+    -fx-start-margin: 20px;
+}
+
+.BackButton{
+    -fx-background-radius: 20px;
+    -fx-background-color: #F8C33A;
+    -fx-text-fill:white;
+}

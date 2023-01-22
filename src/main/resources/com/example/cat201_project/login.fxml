@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cat201_project.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="735.0" fitWidth="972.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@public/LoginBackground.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="226.0" fitWidth="243.0" layoutX="347.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@public/HeongMadihubci-logos_transparent.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="280.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account ID">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="276.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Sans Serif Collection" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="userIDTextField" layoutX="271.0" layoutY="336.0" prefHeight="45.0" prefWidth="389.0" styleClass="textField" stylesheets="@css/login.css" />
+            <TextField fx:id="userPwTextField" layoutX="272.0" layoutY="448.0" prefHeight="45.0" prefWidth="391.0" styleClass="textField" stylesheets="@css/login.css" />
+            <Button fx:id="loginButton" layoutX="402.0" layoutY="557.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="42.0" prefWidth="112.0" stylesheets="@css/login.css" text="Login">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpBttn" layoutX="419.0" layoutY="600.0" mnemonicParsing="false" onAction="#changeToSignUpScene" styleClass="SignUp" stylesheets="@css/login.css" text="Sign Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="emptyTextFieldErrMsg" layoutX="344.0" layoutY="518.0" text="No Blank Information is allowed! Pls Fill in!" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="errorInvalidAccMessage" fill="RED" layoutX="365.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Account Information!!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

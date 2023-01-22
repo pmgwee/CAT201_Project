@@ -1,0 +1,34 @@
+
+.root{
+    -fx-background-color: #000000;
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #FF003C;
+    -fx-text-fill:white;
+    -fx-start-margin: 20px;
+}
+
+.homeButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #F8C33A;
+    -fx-text-fill:black;
+}
+
+
+.searchBar{
+    -fx-font-weight: normal;
+    -fx-font-size: 18 px;
+    -fx-background-radius: 100px;
+    -fx-background-color: #E5E5E5;
+}
+
+.ImageButton{
+    -fx-background-color: #000000;
+    -fx-background-radius: 0px;
+}
