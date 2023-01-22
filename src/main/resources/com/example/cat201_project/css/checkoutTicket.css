@@ -12,13 +12,13 @@
 }
 
 .BackButton{
-    -fx-background-radius: 10px;
+    -fx-background-radius: 20px;
     -fx-background-color: #F8C33A;
     -fx-text-fill:white;
 }
 
 .payButton{
-    -fx-background-radius: 10px;
+    -fx-background-radius: 20px;
     -fx-background-color: #F8C33A;
     -fx-text-fill:black;
 }
