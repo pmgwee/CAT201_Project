@@ -3,7 +3,7 @@
           [
             {
               "movieID" : "0",
-              "movieName" : "Avatar: The Way Of Water",
+              "movieName" : "Avatar:The Way Of Water",
               "movieDescription" : "A disabled former marine, Jake Sully, is sent to the planet Pandora to infiltrate the local tribe of the blue-skinned alien Na'vi and gather information for mining their valuable resources.It's also expected to explore more of the rich ecosystem.",
               "movieCast" : "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang",
               "movieDirector" : "James Cameron",
@@ -131,7 +131,7 @@
               "moviePoster": "src/main/resources/com/example/cat201_project/public/swordartPoster.jpg"
             },{
               "movieID": "15",
-              "movieName": "Black Panther: Wakanda Forever",
+              "movieName": "Black Panther:Wakanda Forever",
               "movieDescription": "Queen Ramonda, Shuri, M`Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T`Challa`s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
               "movieCast": "Lupita Nyong'o, Danai Gurira, Martin Freeman, Letitia Wright, Winston Duke, Angela Bassett",
               "movieDirector": "Ryan Coogler",
