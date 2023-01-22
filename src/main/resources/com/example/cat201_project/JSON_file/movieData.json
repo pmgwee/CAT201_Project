@@ -116,7 +116,7 @@
             },{
               "movieID": "13",
               "movieName": "Mechamato Movie",
-              "movieDescription": "a boy named Amato came across a powerful robot named MechaBot. By outsmarting MechaBot and becoming its master, Amato can now utilize MechaBot’s unique ability to Mechanize everyday objects into high-tech devices.",
+              "movieDescription": "a boy named Amato came across a powerful robot named MechaBotHero. By outsmarting MechaBot and becoming its master, Amato can now utilize MechaBot’s unique ability to Mechanize everyday objects into high-tech devices.",
               "movieCast": "Armand Ezra, Muhamad Noradzlan Mohamad Nazir, Ielham Iskandar",
               "movieDirector": "Nizam Abd Razak",
               "moviePhoto": "src/main/resources/com/example/cat201_project/public/mecha.jpg",
